@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/assets/app.60fef7bc.css') }}">
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('/build/assets/app.ab93cf8a.js') }}" defer></script>
 </head>
 <body class="font-sans bg-gray-background text-gray-900 text-sm">
 <header class="flex items-center justify-between px-8 py-4">
