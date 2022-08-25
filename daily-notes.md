@@ -16,7 +16,7 @@
    use `art route:list | grep "route-i-am-searching-for"`
 6. touch => terminal command that creates a file. example: `touch daily-notes.md `
 7. `npm run` =>  I can see the available options in package.json "scripts".
-8. `asset` => 'assets' is for .js, .css, html, pictures etc and are always saved inside public/assets. Wh  en I
+8. `asset` => 'assets' is for .js, .css, html, pictures etc and are always saved inside public/assets. Wh en I
    see `asset('build/assets/app.60fef7bc.css')` inside a file I have in my mind that is inside public directory.
 9. Servers run PHP, python, node.js.
 10. Client runs css, js, html.
@@ -37,6 +37,8 @@
 5. After ^ elements are positioned using the top, bottom, left, and right properties. They also work differently
    depending on the position value.
 6. Utilities for controlling how flex and grid items are positioned along a container's main axis.
-7. `justify-between` => to justify items along the flex container’s main axis such that there is an equal amount of space
+7. `justify-between` => to justify items along the flex container’s main axis such that there is an equal amount of
+   space
    between each item.
-8. 
+8. `cursor-pointer`(Tailwind CSS) => utility for controlling the cursor style when hovering over an element
+9. 
