@@ -34,11 +34,20 @@
    project where you can define any personal customizations.
 4. Css Positon property => specifies the type of positioning method used for an element and has to be set first(
    available values: static, relative, fixed, absolute, sticky).
-5. After ^ elements are positioned using the top, bottom, left, and right properties. They also work differently
+5. After ^ elements are positioned using the top, bottom, left, and right properties that work differently
    depending on the position value.
 6. Utilities for controlling how flex and grid items are positioned along a container's main axis.
 7. `justify-between` => to justify items along the flex container’s main axis such that there is an equal amount of
    space
    between each item.
 8. `cursor-pointer`(Tailwind CSS) => utility for controlling the cursor style when hovering over an element
-9. 
+9. `npm install` => installs your application's frontend dependencies
+10. `npm run dev` => ( old) used to run the mix module, which is used to compile the JavaScript and CSS files
+11. `npm run build` => ( new) modern frontend build tool that provides an extremely fast development environment and
+    bundles your application's CSS and JavaScript files into production ready assets
+12. HTML `<head>` Element => is a container for metadata (data about data) and is placed between the <html> tag and
+    the <body> tag.
+13. ^ HTML metadata => is data about the HTML document(document title, character set, styles, scripts, and other meta
+    information.)
+14. ^ Metadata is not displayed.
+
