@@ -32,7 +32,7 @@
    given duration.
 3. tailwind.config.js => By default, Tailwind will look for an optional tailwind.config.js file at the root of your
    project where you can define any personal customizations.
-4. Css Positon property => specifies the type of positioning method used for an element and has to be set first(
+4. Css Position property => specifies the type of positioning method used for an element and has to be set first(
    available values: static, relative, fixed, absolute, sticky).
 5. After ^ elements are positioned using the top, bottom, left, and right properties that work differently
    depending on the position value.
@@ -47,3 +47,8 @@
     information) and is placed between the <html> tag and the <body> tag.
 12. ^ Metadata is not displayed.
 
+8/26
+
+1. `app.css` =>
+2. CSS Pseudo-element( inside `app.css`) => is used to style specified parts of an element( e.g. Insert content before, or after, the
+   content of an element. Style the first letter, or line, of an element )
