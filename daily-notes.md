@@ -49,6 +49,13 @@
 
 8/26
 
-1. `app.css` =>
-2. CSS Pseudo-element( inside `app.css`) => is used to style specified parts of an element( e.g. Insert content before, or after, the
+1. CSS Pseudo-element( inside `app.css`) => is used to style specified parts of an element( e.g. Insert content before,
+   or after, the
    content of an element. Style the first letter, or line, of an element )
+2. `x-data` => use of Alpine
+3. Alpine =>  enables you to harness the reactive and declarative nature of popular frontend libraries and frameworks(
+   Angular, React, Vue) at a much lower cost
+4. DTO( database transfer object) => is an object that carries data between processes. It facilitates communication
+   between two systems (like an API and your server) without potentially exposing sensitive information
+5. `app.css` =>
+
