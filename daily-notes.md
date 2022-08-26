@@ -16,8 +16,8 @@
    use `art route:list | grep "route-i-am-searching-for"`
 6. touch => terminal command that creates a file. example: `touch daily-notes.md `
 7. `npm run` =>  I can see the available options in package.json "scripts".
-8. `asset` => 'assets' is for .js, .css, html, pictures etc and are always saved inside public/assets. Wh en I
-   see `asset('build/assets/app.60fef7bc.css')` inside a file I have in my mind that is inside public directory.
+8. `asset` => 'assets' is for .js, .css, html, pictures etc and are always saved inside public/assets. (
+   e.g. `asset('build/assets/app.60fef7bc.css')`)
 9. Servers run PHP, python, node.js.
 10. Client runs css, js, html.
 11. Hot Module Replacement( or Hot Reloading) => allows you to refresh the page when a piece of JavaScript is changed
@@ -50,12 +50,29 @@
 8/26
 
 1. CSS Pseudo-element( inside `app.css`) => is used to style specified parts of an element( e.g. Insert content before,
-   or after, the
-   content of an element. Style the first letter, or line, of an element )
-2. `x-data` => use of Alpine
-3. Alpine =>  enables you to harness the reactive and declarative nature of popular frontend libraries and frameworks(
+   or after, the content of an element. Style the first letter, or line, of an element)
+2. HTML `form` => is used to collect user input. The user input is most often sent to a server for processing
+3. `x-data` => use of Alpine
+4. Alpine =>  enables you to harness the reactive and declarative nature of popular frontend libraries and frameworks(
    Angular, React, Vue) at a much lower cost
-4. DTO( database transfer object) => is an object that carries data between processes. It facilitates communication
+5. Tailwind => is a power pack of everything you need to create a website without writing any custom CSS.
+6. Livewire => is a full-stack framework for Laravel that makes building dynamic interfaces simple, without leaving the
+   comfort of Laravel( coded like PHP).
+7. DTO( database transfer object) => is an object that carries data between processes. It facilitates communication
    between two systems (like an API and your server) without potentially exposing sensitive information
-5. `app.css` =>
+8. `composer update` =>
+    - Read composer.json
+    - Remove installed packages that are no more required in composer.json
+    - Check the availability of the latest versions of your required packages
+    - Install the latest versions of your packages
+    - Update composer.lock to store the installed packages version
+9. `composer install` =>
+    - Check if composer.lock file exists (if not, run composer-update and create it)
+    - Read composer.lock file
+    - Install the packages specified in the composer.lock file
+10. CSRF ( cross-site request forgery) token =>is a secure random token (e.g., synchronizer token or challenge token)
+    that is used to prevent CSRF attacks.
+11. CSRF exists because web applications trust the cookies sent by web browsers within an HTTP request.
+12. CSRF attack => the attacker causes a victim's browser to make a request that results in a change or action which
+    benefits the attacker (and/or harms the victim) in some way.
 
