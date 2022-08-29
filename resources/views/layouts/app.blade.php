@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="{{ asset('build/assets/app.10154edf.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/assets/app.4ca6ab45.css') }}">
+    <livewire:styles />
+
 
     <!-- Scripts -->
     <script src="{{ asset('/build/assets/app.ab93cf8a.js') }}" defer></script>
@@ -80,7 +82,7 @@
                         <option value="Category Four">Category Four</option>
                     </select>
                 </div>
-                <div>2
+                <div>
                     <textarea name="idea" id="idea" cols="30" rows="4"
                               class="w-full bg-gray-100 rounded-xl border-none placeholder-gray-900 text-sm px-4 py-2"
                               placeholder="Describe your idea"></textarea>
@@ -130,5 +132,6 @@
         </div>
     </div>
 </main>
+<livewire:scripts />
 </body>
 </html>
