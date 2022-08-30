@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="{{ asset('build/assets/app.58784039.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/assets/app.dd8781d8.css') }}">
     <livewire:styles />
 
 
