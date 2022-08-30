@@ -95,10 +95,27 @@
 9. Response => Server to Client
 10. Alpine => Frond End, runs on the Client. It results immediate changes, without requesting the Server.
 11. Livewire => Back End, the Client requests the Server and a response comes back to the Client.
-12. Responsive Design (Tailwind css) => you can specify how your UI will be rendered depend on the size of a given screen.
+12. Responsive Design (Tailwind css) => you can specify how your UI will be rendered depend on the size of a given
+    screen.
 13. Slug => is the last part of the url containing a unique string which identifies the resource being served by the web
     service, is a unique identifier for the resource
 14. Laravel route model binding => provides a convenient way to automatically inject the model instances directly into
     your routes.( e.g. instead of injecting a user's ID, you can inject the entire User model instance that
     matches the given ID. e.g. Route::get('/ideas/{idea}', [IdeaController::class, 'show']);)
+
+8/30
+
+1. phpunt.xml => PHPUnit uses XML file for configuration. These settings will help you make sure your unitn tests work
+   the way you want. This configuration file can be added to your version control system so all developers get the same
+   output.
+2. Tinkerwell check 10:00 in the 10th video
+3. Anchor tag/ Image tag
+4. 0535 11th video => you click and see button, img, svg etc
+5. 0320 11th videp => get the element that we click on
+6. md5(method on php ) hash? 00:37 12th video
+7. 02:28 accessor instead of metheod, 12th video
+8. To use factories in a Test => use Tests/TestCase;
+9. `$response = $this->get(route('idea.index'));` => we use it inside a test file. It gives us the result of the
+   idea.index page and what it contains, so then we can make assertions and see if everything works as expected.
+10. ^ or `$response = $this->get('/');`  => is the same as above
 
