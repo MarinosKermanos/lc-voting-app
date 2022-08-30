@@ -100,22 +100,27 @@
 13. Slug => is the last part of the url containing a unique string which identifies the resource being served by the web
     service, is a unique identifier for the resource
 14. Laravel route model binding => provides a convenient way to automatically inject the model instances directly into
-    your routes.( e.g. instead of injecting a user's ID, you can inject the entire User model instance that
+    your routes.( e.g. instead of injecting a user's ID, you can inje ct the entire User model instance that
     matches the given ID. e.g. Route::get('/ideas/{idea}', [IdeaController::class, 'show']);)
 
 8/30
 
-1. phpunt.xml => PHPUnit uses XML file for configuration. These settings will help you make sure your unitn tests work
+1. phpunt.xml => PHPUnit uses XML file for configuration. These settings will help you make sure your unit tests work
    the way you want. This configuration file can be added to your version control system so all developers get the same
    output.
-2. Tinkerwell check 10:00 in the 10th video
-3. Anchor tag/ Image tag
-4. 0535 11th video => you click and see button, img, svg etc
-5. 0320 11th videp => get the element that we click on
-6. md5(method on php ) hash? 00:37 12th video
-7. 02:28 accessor instead of metheod, 12th video
+2. Anchor link => The <a> HTML element (or anchor element), with its href attribute, creates a hyperlink to web pages,
+   files, email addresses, locations in the same page, or anything else a URL can address.
+3. ^ Content within each <a> should indicate the link's destination.
+4. <img> tag => is used to embed an image in an HTML page. Images are not technically inserted into a web
+   page; images are linked to web pages. It creates a holding space for the referenced image. ( `src`=> you have to specify the path to the image)
+5. (11th/05:35)  `clicked.tagName.toLowerCase()` => you click and see is that you click on e.g. div, img,
+   button, path, tag etc.
+6. (11th, 03:20) `$event.target` => get the element that we click on.
+7. md5( ) => cryptographic hash algorithm
 8. To use factories in a Test => use Tests/TestCase;
-9. `$response = $this->get(route('idea.index'));` => we use it inside a test file. It gives us the result of the
+9. `$response = $this->get(route('idea.index'));` => we use it inside a test file. It responds(from Server) the result of the
    idea.index page and what it contains, so then we can make assertions and see if everything works as expected.
 10. ^ or `$response = $this->get('/');`  => is the same as above
-
+11. $response = Http:get($user->getAvatar()); => is used for Testing( UserTest.php)
+    - makes a network Request to the end point and returns a Response.
+    - getAvatar() => is a method inside User Model that returns a URL.
