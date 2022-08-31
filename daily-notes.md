@@ -144,4 +144,5 @@
 5. `forelse` => essentially is a foreach loop, but with extra handling for empty array.
     - e.g. `@forelse($notifications ?? [] as $notification)`
     - if `$notifications` is empty return `[]`
+6. 
 
