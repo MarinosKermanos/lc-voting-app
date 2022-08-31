@@ -118,9 +118,30 @@
 6. (11th, 03:20) `$event.target` => get the element that we click on.
 7. md5( ) => cryptographic hash algorithm
 8. To use factories in a Test => use Tests/TestCase;
-9. `$response = $this->get(route('idea.index'));` => we use it inside a test file. It responds(from Server) the result of the
+9. `$response = $this->get(route('idea.index'));` => we use it inside a test file. It responds(from Server) the result
+   of the
    idea.index page and what it contains, so then we can make assertions and see if everything works as expected.
 10. ^ or `$response = $this->get('/');`  => is the same as above
 11. $response = Http:get($user->getAvatar()); => is used for Testing( UserTest.php)
     - makes a network Request to the end point and returns a Response.
     - getAvatar() => is a method inside User Model that returns a URL.
+
+8/31
+
+1. Responsive UI => when your UI adapts to every (browser) window size, and every screen size( e.g. tv, smartphone,
+   laptop etc).
+2. (inside a Model) `protected $casts = [ ];`
+    - The $casts property on your model provides a convenient method of converting attributes to common data types(
+      native types).
+    - The $casts property should be an array where the key is the name of the attribute being cast and the value is the
+      type you wish to cast the column to.
+3. Helpers functions are used by the framework itself and also, you can use them in your own applications as per your
+   convenience. Also, you can create custom helper functions( `public static function`).
+4. Traits
+    - are commonly utilized code
+    - are a mechanism for code reuse, enabling a developer to reuse sets of methods freely in several independent
+      classes living in different class hierarchies ( `public function`)
+5. `forelse` => essentially is a foreach loop, but with extra handling for empty array.
+    - e.g. `@forelse($notifications ?? [] as $notification)`
+    - if `$notifications` is empty return `[]`
+
