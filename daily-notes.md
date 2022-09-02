@@ -1,4 +1,4 @@
-# I will do below to become a entry-level beast at TALL stack by October 2nd, 2022.
+co# I will do below to become a entry-level beast at TALL stack by October 2nd, 2022.
 
 - I will watch Laracasts at least 1 hour per day. I will repeat till I understand what the instructor is doing and why
   it is necessary.
@@ -53,8 +53,8 @@
 
 1. CSS Pseudo-element( inside `app.css`) => is used to style specified parts of an element( e.g. Insert content before,
    or after, the content of an element. Style the first letter, or line, of an element)
-2. HTML `form` => is used to collect user input. The user input is most often sent to a server for processing
-3. `x-data` => use of Alpine
+2. HTML `form` => is u\sed to collect user input. The user input is most often sent to a server for processing
+3. `x-data` => using of Alpine
 4. Alpine =>  enables you to harness the reactive and declarative nature of popular frontend libraries and frameworks(
    Angular, React, Vue) at a much lower cost
 5. Tailwind => is a power pack of everything you need to create a website without writing any custom CSS.
@@ -144,5 +144,48 @@
 5. `forelse` => essentially is a foreach loop, but with extra handling for empty array.
     - e.g. `@forelse($notifications ?? [] as $notification)`
     - if `$notifications` is empty return `[]`
-6. 
+6. Graphical User Interface (GUI) and Command Line Interface (CLI) are the two means of interaction between a user and
+   an electronic device.
+7. GUI => is a graphical representation in which the users can interact with software or devices through clickable
+   icons(using mouse+keyboard).
+8. CLI
+    - is a console or text-based representation in which the user types( only keyboard) commands into a terminal to
+      operate and navigate
+      the software or devices.
+    - CLI requires a smaller amount of RAM and CPU processing time( no visual representation).
+    - Concerning hacking and penetration testing, remote access, and file manipulation are done from the command line.
+    - Support scripting or task automation.
+9. handler()
 
+9/1
+
+1. UUID
+    - used for identifying information that needs to be unique within a system or network thereof.
+    - their uniqueness and low probability in being repeated makes them useful for being associative keys in databases
+      and identifiers for physical hardware within an organization.
+2.SNS/SQS
+    - Each app will broadcast( publish) an Event to SNS. An Event is just a JSON message.
+    - Then SNS will write the message (aka Event) to each consumer app’s designated SQS.
+    - Each App will read the message from its designated SQS and may or may not perform an action based on the message.
+2. `<span>` tag => used on small segments of text, links, images, and other HTML elements that appear inline with the
+   surrounding content.
+3. To summarize, a div tag creates a block-level element while a <span> tag wraps around an inline
+   element.
+4. cat ( in terminal) => ( concatinate) it prints the contents of the file in the terminal
+5. rm -rf vendor && co install
+    - rm => remove( delete)
+    - rf => r?? f( force)
+6. history (in command-line) => it shows the history of the command I ran
+7. php -v => shows the project's PHP version
+8. brew unlink php@8.1 && brew link php@8.0 --force
+9. pwd => print working directory
+10. ~ => tilde denotes the home directory e.g. User/MarinosKermanos
+11. / => forward slash denotes the root directory
+
+9/2
+
+1. actions in Livewire => The goal is to be able to easily listen to page interactions, and call a method on your
+   Livewire component (re-rendering the component).
+2. Response represents an HTTP response.
+3. `Symfony\Component\HttpFoundation\Response` => you can use all HTTP responses from this file.
+4. 
