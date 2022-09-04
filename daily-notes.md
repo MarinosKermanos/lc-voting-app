@@ -163,7 +163,7 @@ co# I will do below to become a entry-level beast at TALL stack by October 2nd, 
     - used for identifying information that needs to be unique within a system or network thereof.
     - their uniqueness and low probability in being repeated makes them useful for being associative keys in databases
       and identifiers for physical hardware within an organization.
-2.SNS/SQS
+      2.SNS/SQS
     - Each app will broadcast( publish) an Event to SNS. An Event is just a JSON message.
     - Then SNS will write the message (aka Event) to each consumer app’s designated SQS.
     - Each App will read the message from its designated SQS and may or may not perform an action based on the message.
@@ -188,4 +188,7 @@ co# I will do below to become a entry-level beast at TALL stack by October 2nd, 
    Livewire component (re-rendering the component).
 2. Response represents an HTTP response.
 3. `Symfony\Component\HttpFoundation\Response` => you can use all HTTP responses from this file.
-4. 
+4. when you run `npm run` => sometimes I got a stack of errors beginning with `npm ERR!`. To understand the issue I
+   have to start
+   reading from bottom to top.
+5. `$this->actingAs(User::factory()->create())` => used for testing, it creates a logged-in User.
