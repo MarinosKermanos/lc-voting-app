@@ -22,6 +22,7 @@ co# I will do below to become a entry-level beast at TALL stack by October 2nd, 
 10. Hot Module Replacement( or Hot Reloading) => allows you to refresh the page when a piece of JavaScript is changed
     and also maintain the current state of the component in the browser.
 11. Documentation -> have to make micro assumptions, so I can guess where the answer is located.
+12. Providers => doctors
 
 8/25
 
@@ -85,7 +86,8 @@ co# I will do below to become a entry-level beast at TALL stack by October 2nd, 
 2. HTML - The Builder => ( Hypertext Markup Language) defines the context of the page, the images, links.
 3. CSS - The Artist => ( Cascading Style Sheets) It gives style to HTML content. Defines the colours, the fonts and the
    positioning of content.
-4. Javascript - the Wizard => pop up error messages, autocomplete.
+4. Javascript - the Wizard => ( pop up error messages, autocomplete) Used both on the client-side and server-side that
+   allows you to make web pages interactive,
 5. Web Browsers( e.g.firefox, googlechrome) translate these three languages into the visual web page( UI- User
    Interface).
 6. The Client runs the Front-End of the page and the Server the Back-End of the page.
@@ -189,6 +191,69 @@ co# I will do below to become a entry-level beast at TALL stack by October 2nd, 
 2. Response represents an HTTP response.
 3. `Symfony\Component\HttpFoundation\Response` => you can use all HTTP responses from this file.
 4. when you run `npm run` => sometimes I got a stack of errors beginning with `npm ERR!`. To understand the issue I
-   have to start
-   reading from bottom to top.
+   have to start reading from bottom to top.
 5. `$this->actingAs(User::factory()->create())` => used for testing, it creates a logged-in User.
+
+9/5
+
+1. webpack
+    - Open-source module bundler for JavaScript. It can transform front-end assets
+      such as HTML, CSS, and images if the corresponding loaders are included
+    - takes modules with dependencies and generates static assets representing those modules.
+2. node.js
+3. composer
+    - is a tool that includes all the dependencies and libraries.
+    - It helps the user to develop a project with respect to the mentioned framework.
+    - Third-party libraries can be installed easily using composer.
+    - Composer is used to managing its dependencies and the dependencies are noted in composer
+4. package.json
+5. vue.js
+6. Provider-app Seeder Steps
+    - delete all tables from the db
+    - run from provider:
+    - php artisan migrate
+    - php artisan db:seed --class=CircleLinkHealth\Customer\Database\Seeders\TestSuiteSeeder
+
+7. Nurse-app Seeders Steps
+    - delete all tables from the db
+    - run from the nurse
+    - php artisan migrate
+    - php artisan run:patientsSeeder --userId={userId} --amountOfPatients={number of patients}
+      e.g {userId} => care-center user 1, {number of patients} => i just write how many patients I'm responsible for.
+8. php artisan make:command 'nameOfTheCommand' => `protected $signature = 'run:kolos';` You specify how you call this
+   command
+9. ternary operator
+    - condition ? true result : false result => `(Condition) ? (Statement1) : (Statement2);`
+    - you have to use `isset(Condition)` to make sure that the condition is set( !NULL) and not get any error
+10. Elvis operator ( shorten the length of ternary operator) => expression1 ?: expression2
+    - It will return the first operand if the operand is true, else it evaluates and returns its second operand.
+    - It is the ternary operator with the second operand omitted.
+    - If `condition` is not set, it will cause a notice ( not an error)
+
+9/6
+
+1. Null Coalescing Operator
+    - `(Condition)?(Statement1)?(Statement2);`
+    - It replaces the ternary operation in conjunction with isset() function which is used to check whether a given
+      variable ( `condition`) is NULL or not and returns its first operand if it exists and is not NULL, else it returns
+      the second operand.
+    - e.g. `$user= $_GET['user'] ?? 'nobody';` => It will fetch the value of $_GET[user] and returns ‘nobody’ if it does
+      not exist( ! isset()).
+    - Instead of writing some lengthy code like this: `$user= isset($_GET['user']) ? $_GET['user'] : 'nobody';`
+2. `__invoke()`
+    - Single Action Controllers
+    - If a controller action is particularly complex, you might find it convenient to dedicate an entire controller
+      class to that single action.
+    - To accomplish this, you may define a single __invoke method within the controller.
+3. e.g Index.vue
+    - Vue.js file
+    - consists of: template => for Html things to be visible and script => for javascript things
+4. Difference between composer.json and package.json
+    - composer.json =>  is a composer file to keep track of php packages.
+    - package.json => is a npm file to keep track of npm packages.( Front End packages)
+5. npm run dev => compiles the js and css
+6. npm install => use it when you make changes to package.json
+7. The <script> HTML element => is used to embed executable code or data; this is typically used to embed or refer to
+   JavaScript code.
+8. ( Vue js) `v-bind:class` = `:class`
+9. ( Vue js) `v-on:click` = `@click ` ( Event Handler)
